@@ -10,6 +10,7 @@ import { CentroComponent } from './centro/centro.component';
 import { CargarScriptsService} from "./cargar-scripts.service";
 import { SlidebarComponent } from './slidebar/slidebar.component';
 import { InferiorComponent } from './inferior/inferior.component';
+import { AcordionComponent } from './acordion/acordion.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { InferiorComponent } from './inferior/inferior.component';
     FooterComponent,
     CentroComponent,
     SlidebarComponent,
-    InferiorComponent
+    InferiorComponent,
+    AcordionComponent
   ],
   imports: [
     BrowserModule,
