@@ -11,5 +11,6 @@ export class SlidebarComponent implements OnInit {
 
   ngOnInit(): void {
   }
+  
 
 }
