@@ -1,9 +1,35 @@
 
-<app-header></app-header>
 
-<app-centro></app-centro>
+<div clas="container-flex">
+    <div class="row" id="head">
 
-<app-footer></app-footer>
+        <app-header></app-header>
+        
+    </div>
+    <div class="row" id="principal">
+        <div class="col-8">
+
+            <app-slidebar></app-slidebar>
+
+        </div>
+        <div class="col-4">
+            <app-centro></app-centro>
+
+        </div>
+    </div>
+    <div class="row" id=""></div>
+    <div class="row" id=""></div>
+    <div class="row" id="inferior">
+
+        <app-inferior></app-inferior>
+
+    </div>
+
+    <div class="row" id="footer">
+        <app-footer></app-footer>
+    </div>
+</div>
+
 
 <router-outlet></router-outlet>
 

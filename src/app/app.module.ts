@@ -7,18 +7,26 @@ import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { CentroComponent } from './centro/centro.component';
 
+import { CargarScriptsService} from "./cargar-scripts.service";
+import { SlidebarComponent } from './slidebar/slidebar.component';
+import { InferiorComponent } from './inferior/inferior.component';
+
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     FooterComponent,
-    CentroComponent
+    CentroComponent,
+    SlidebarComponent,
+    InferiorComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [
+    CargarScriptsService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
