@@ -11,6 +11,9 @@ import { CargarScriptsService} from "./cargar-scripts.service";
 import { SlidebarComponent } from './slidebar/slidebar.component';
 import { InferiorComponent } from './inferior/inferior.component';
 import { AcordionComponent } from './acordion/acordion.component';
+import { FormcontactoComponent } from './formcontacto/formcontacto.component';
+import { QuienesSomosComponent } from './quienes-somos/quienes-somos.component';
+import { InicioSesionComponent } from './inicio-sesion/inicio-sesion.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +23,10 @@ import { AcordionComponent } from './acordion/acordion.component';
     CentroComponent,
     SlidebarComponent,
     InferiorComponent,
-    AcordionComponent
+    AcordionComponent,
+    FormcontactoComponent,
+    QuienesSomosComponent,
+    InicioSesionComponent
   ],
   imports: [
     BrowserModule,
