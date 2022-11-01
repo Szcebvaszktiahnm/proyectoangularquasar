@@ -14,6 +14,7 @@ import { AcordionComponent } from './acordion/acordion.component';
 import { FormcontactoComponent } from './formcontacto/formcontacto.component';
 import { QuienesSomosComponent } from './quienes-somos/quienes-somos.component';
 import { InicioSesionComponent } from './inicio-sesion/inicio-sesion.component';
+import { Page404Component } from './page404/page404.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { InicioSesionComponent } from './inicio-sesion/inicio-sesion.component';
     AcordionComponent,
     FormcontactoComponent,
     QuienesSomosComponent,
-    InicioSesionComponent
+    InicioSesionComponent,
+    Page404Component
   ],
   imports: [
     BrowserModule,
