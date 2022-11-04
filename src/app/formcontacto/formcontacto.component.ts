@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {FormGroup, FormBuilder} from '@angular/forms';
 
 @Component({
   selector: 'app-formcontacto',
@@ -7,9 +8,25 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FormcontactoComponent implements OnInit {
 
-  constructor() { }
+  formulariocontacto:FormGroup;
+
+  enviarInfo(){
+    console.log("HOLA");
+    console.log(this.formulariocontacto.value);
+  }
+
+  constructor(public formulario:FormBuilder) { 
+    this.formulariocontacto=this.formulario.group(
+      {
+    nombreyapellido:[''],
+    correo:[''],
+    comentario:['']
+      }
+    )
+  }
 
   ngOnInit(): void {
+
   }
 
 }

@@ -9,6 +9,7 @@ const routes: Routes = [
 {path: 'frmContacto', component: FormcontactoComponent},
 {path: 'inicioSesion', component: InicioSesionComponent},
 {path: 'quienesSomos', component: QuienesSomosComponent},
+{path: '',  redirectTo:'/inicioSesion', pathMatch: 'full' },
 {path: '**', component: Page404Component }
 ];
 

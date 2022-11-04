@@ -15,6 +15,11 @@ import { FormcontactoComponent } from './formcontacto/formcontacto.component';
 import { QuienesSomosComponent } from './quienes-somos/quienes-somos.component';
 import { InicioSesionComponent } from './inicio-sesion/inicio-sesion.component';
 import { Page404Component } from './page404/page404.component';
+import { AdminComponent } from './admin/admin.component';
+import { SidebarComponent } from './admin/sidebar/sidebar.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule} from '@angular/common/http';
+import { NgForm } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -28,11 +33,16 @@ import { Page404Component } from './page404/page404.component';
     FormcontactoComponent,
     QuienesSomosComponent,
     InicioSesionComponent,
-    Page404Component
+    Page404Component,
+    AdminComponent,
+    SidebarComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [
     CargarScriptsService
