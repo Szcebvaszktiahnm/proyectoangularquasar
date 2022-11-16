@@ -1,0 +1,56 @@
+<div class="container-fluid">
+    <div class="mb-3">
+        <form [formGroup]="formularioempleado" (ngSubmit)="enviarInfo()" >
+            <!---->
+       
+            <label for="" class="form-label">Agregar Empleado</label>
+            <input type="text" class="form-control" formControlName="id" name="" id="" aria-describedby="helpId"
+                placeholder="">
+                <div class="container-fluid">
+                    <div class="mb-3">
+                        <form [formGroup]="formularioempleado" (ngSubmit)="enviarInfo()" >
+                            <!---->
+                       
+                            <label for="" class="form-label">Agregar Empleado</label>
+                            <input type="text" class="form-control" formControlName="nombre" name="" id="" aria-describedby="helpId"
+                                placeholder="">
+                                <input type="email" class="form-control form-control-sm" formControlName="correo" name="" id="" aria-describedby="helpId"
+                placeholder="">
+            <small id="helpId" class="form-text text-muted">Ingrese su consulta</small>
+            <br>
+            <button type="submit" class="btn btn-primary">Enviar</button>
+
+        </form>
+    </div>
+</div>
+<div class="card">
+    <div class="card-header">
+        Empleados
+    </div>
+    <div class="card-body">
+        <div class="table-responsive">
+            <table class="table table-primary">
+                <thead>
+                    <tr>
+                        <th scope="col">ID</th>
+                        <th scope="col">Nombre</th>
+                        <th scope="col">Correo</th>
+                        <th scope="col">Acciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let empleado of Empleados; let iControl=index">
+                        <td>{{empleado.id}}</td>
+                        <td>{{empleado.nombre}}</td>
+                        <td>{{empleado.correo}}</td>
+                        <td>Editar | Borrar</td>
+                    </tr>
+  
+                </tbody>
+            </table>
+        </div>
+        
+
+    </div>
+
+</div>

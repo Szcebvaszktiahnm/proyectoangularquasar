@@ -20,6 +20,7 @@ import { SidebarComponent } from './admin/sidebar/sidebar.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule} from '@angular/common/http';
 import { NgForm } from '@angular/forms';
+import { EmpleadosComponent } from './empleados/empleados.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +36,8 @@ import { NgForm } from '@angular/forms';
     InicioSesionComponent,
     Page404Component,
     AdminComponent,
-    SidebarComponent
+    SidebarComponent,
+    EmpleadosComponent
   ],
   imports: [
     BrowserModule,
