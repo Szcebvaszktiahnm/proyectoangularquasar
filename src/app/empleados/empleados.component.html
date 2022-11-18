@@ -1,35 +1,38 @@
-<div class="container-fluid">
-    <div class="mb-3">
-        <form [formGroup]="formularioempleado" (ngSubmit)="enviarInfo()" >
-            <!---->
-       
-            <label for="" class="form-label">Agregar Empleado</label>
-            <input type="text" class="form-control" formControlName="id" name="" id="" aria-describedby="helpId"
-                placeholder="">
+<br>
+<div class="card table-primary">  
+    <div class="card-header">
+        Carga Empleados
+    </div><br>
+            <!--<form [formGroup]="formularioempleado" (ngSubmit)="enviarInfo()" > -->
                 <div class="container-fluid">
                     <div class="mb-3">
                         <form [formGroup]="formularioempleado" (ngSubmit)="enviarInfo()" >
                             <!---->
-                       
-                            <label for="" class="form-label">Agregar Empleado</label>
+                            <label for="" class="form-label">ID Empleados</label>
+                            <input type="text" class="form-control" formControlName="id" name="" id="" aria-describedby="helpId"
+                                placeholder="Ingrese ID"><br>
+                            <label for="" class="form-label">Nombre y Apellido</label>
                             <input type="text" class="form-control" formControlName="nombre" name="" id="" aria-describedby="helpId"
-                                placeholder="">
-                                <input type="email" class="form-control form-control-sm" formControlName="correo" name="" id="" aria-describedby="helpId"
-                placeholder="">
-            <small id="helpId" class="form-text text-muted">Ingrese su consulta</small>
-            <br>
+                                placeholder="Ingrese Nombre y Apellido"><br>
+                            <label for="" class="form-label">Email</label>
+                            <input type="email" class="form-control form-control-sm" formControlName="correo" name="" id="" aria-describedby="helpId"
+                                placeholder="Ingrese Email">
+            <!--<small id="helpId" class="form-text text-muted">Ingrese su consulta</small>-->
+            <br><br>
             <button type="submit" class="btn btn-primary">Enviar</button>
 
-        </form>
-    </div>
-</div>
+                </form>
+                    </div>
+                </div>
+    
+
 <div class="card">
     <div class="card-header">
         Empleados
     </div>
     <div class="card-body">
         <div class="table-responsive">
-            <table class="table table-primary">
+            <table class="table table-primary" >
                 <thead>
                     <tr>
                         <th scope="col">ID</th>
@@ -39,11 +42,11 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr *ngFor="let empleado of Empleados; let iControl=index">
+                    <tr *ngFor="let empleado of Empleados; let iControl=index" >
                         <td>{{empleado.id}}</td>
                         <td>{{empleado.nombre}}</td>
                         <td>{{empleado.correo}}</td>
-                        <td>Editar | Borrar</td>
+                        <td><a href="">Editar </a>| <a href="">Borrar</a></td>
                     </tr>
   
                 </tbody>

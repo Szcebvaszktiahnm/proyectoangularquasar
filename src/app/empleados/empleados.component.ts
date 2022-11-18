@@ -12,11 +12,7 @@ export class EmpleadosComponent implements OnInit {
   formularioempleado: FormGroup;
 
 
-enviarInfo() {
-    console.log("hola");
-    console.log(this.formularioempleado.value);
-    this.servicio.agregarEmpleados(this.formularioempleado.value).subscribe();
-  }
+
   constructor(
     public formulario: FormBuilder,
     private servicio: CrudempleadosService
@@ -31,10 +27,17 @@ enviarInfo() {
   }
 
   ngOnInit(): void {
-    this.servicio.mostrarEmpleados().subscribe(repuesta=>{
-      console.log(repuesta);
-      this.Empleados=repuesta;
+    this.servicio.mostrarEmpleados().subscribe(respuesta=>{
+      console.log(respuesta);
+      this.Empleados=respuesta;
+      // this.Empleados=repuesta;
     });
+  }
+  enviarInfo() {
+    console.log("hola");
+    console.log(this.formularioempleado.value);
+    this.servicio.agregarEmpleados(this.formularioempleado.value).subscribe();
+
   }
 
 }

@@ -7,7 +7,7 @@ import { empleados } from './empleados';
   providedIn: 'root'
 })
 export class CrudempleadosService {
-API:string = 'http://api.institutequasar.com/';//api de php CRUD (API)
+API:string = 'http://localhost/empleados/';//'http://api.institutequasar.com/';//api de php CRUD (API) - 'http://localhost/empleados/'
   constructor(
     private conexionservicio:HttpClient) {}
   agregarEmpleados(datosEmpleado:empleados):Observable<any>{ 
