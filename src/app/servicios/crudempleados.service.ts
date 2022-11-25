@@ -16,4 +16,20 @@ API:string = 'http://localhost/empleados/';//'http://api.institutequasar.com/';/
 mostrarEmpleados(){
   return this.conexionservicio.get(this.API);
 }
+borrarEmpleados(id:any):Observable<any>{ 
+  return this.conexionservicio.get(this.API+"?borrar=1",id);
+}
+
+modificarEmpleados(id:any):Observable<any>{ 
+  return this.conexionservicio.get(this.API+"?actualizar=1",id);
+}
+
+obtenerEmpleado(id:any):Observable<any>{ 
+  return this.conexionservicio.get(this.API+"?consultar="+id);
+}
+
+editarEmpleado(id:any,datosEmpleado:any):Observable<any>{
+  return this.conexionservicio.post(this.API+"?actualizar="+id,datosEmpleado);
+}
+
 }

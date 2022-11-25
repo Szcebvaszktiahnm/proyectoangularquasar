@@ -21,6 +21,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule} from '@angular/common/http';
 import { NgForm } from '@angular/forms';
 import { EmpleadosComponent } from './empleados/empleados.component';
+import { EditarEmpleadosComponent } from './editar-empleados/editar-empleados.component';
 
 @NgModule({
   declarations: [
@@ -37,7 +38,8 @@ import { EmpleadosComponent } from './empleados/empleados.component';
     Page404Component,
     AdminComponent,
     SidebarComponent,
-    EmpleadosComponent
+    EmpleadosComponent,
+    EditarEmpleadosComponent
   ],
   imports: [
     BrowserModule,
